@@ -1,0 +1,27 @@
+<view wx:if="{{longitude-116.283415<=0.0001}}">
+<map id="map"
+longitude="{{longitude}}"
+latitude="{{latitude}}"
+scale="14"
+markers="{{markers}}"
+bindmarkertap="markertap"
+bindregionchange="regionchange"
+show-location
+style="width: 100%; height: 300px;"
+>
+</map>
+</view>
+<view wx:if="{{longitude-116.283415<=0.0001}}">
+<button bindtap="GPSsubmit" type="primary">获取地理位置</button>
+</view>
+<view>维度：{{latitude}} </view>
+<view>经度：{{longitude}}</view>
+<view wx:if="{{longitude-116.283415>0.0001}}">
+<image src="/image/dalao.jpg"></image>
+</view>
+<view wx:if="{{longitude-116.283415>0.0001}}">
+倒垃圾傻逼
+</view>
+<view wx:if="{{longitude-116.283415>0.0001}}">
+<button bindtap="GPSsubmit" type="primary">刷新</button>
+</view>
